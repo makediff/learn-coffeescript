@@ -8,13 +8,18 @@ CoffeeScript主要用于两种环境中，一、**浏览器里**。 二、**服�
 ###在浏览器里运行
 主要分为两步
 
-1. 包含coffee-script.js，官网下载地址<http://coffeescript.org/extras/coffee-script.js> 
+1. 包含coffee-script.js，官网下载地址：<http://coffeescript.org/extras/coffee-script.js> 。
 1. CoffeeScript代码写在标签`<script type="text/coffeescript">`内。
-如：
+
+
+
+如下：
+
+
 	<script src="../coffee-script.js" ></script>
 	<script type="text/coffeescript">
-		# 你的CoffeeScript代码
-		alert "世界你好!"
+	# 你的CoffeeScript代码
+	alert "世界你好!"
 	</script>
 
 
