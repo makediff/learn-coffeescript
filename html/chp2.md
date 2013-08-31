@@ -39,3 +39,4 @@ CoffeeScript主要用于两种环境中，一、浏览器里。 二、服务器�
 运行一下吧， `coffee chp1_code2.coffee`
 
 好了，环境就到此为止了，如果你还不知道npm, 去这里看看 <https://npmjs.org>
+
