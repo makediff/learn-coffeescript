@@ -1,7 +1,7 @@
 第四章 万丈高楼平地起 函数、对象和数组
 ==
 
-#函数的定义#
+##函数的定义
 CoffeeScript中屏弃了function关键字的用法，取而代之的使用 `->` 来表明一个函数。如定义函数
 
 `cube = (x)-> x*x*x`
@@ -19,7 +19,7 @@ CoffeeScript中屏弃了function关键字的用法，取而代之的使用 `->` 
 
 函数体的最后一句会默认是函数的返回值，所以 `cube = (x)-> return x*x*x` 可以简写成 `cube = (x)-> x*x*x`
 
-#函数的调用#
+##函数的调用#
 对于上面定的cube函数，调用的格式如下
 
 `cube 3`
@@ -33,7 +33,7 @@ CoffeeScript中屏弃了function关键字的用法，取而代之的使用 `->` 
           
 函数还支持变参的处理，#todo#查阅资料
 
-#数组的定义#
+##数组的定义#
 coffeescript的数组的定义和原生的javascript基本时类似的，如
 `shopping = ["油", "盐", "酱", "醋"]` 和原生的javascript代码时一样的, 不同的是，你可以这样来定义
 
@@ -51,7 +51,7 @@ coffeescript: `shopping = [1,2,3,4,]` ,这里没有问题,coffeescript会做兼�
 
 @todos 数组的使用
 
-#对象字面量的定
+##对象字面量的定
 
      scores = { zhangsan:78, lisi: 82 }
      scores = 
