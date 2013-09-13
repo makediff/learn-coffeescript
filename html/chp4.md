@@ -1,6 +1,8 @@
 第四章 万丈高楼平地起 函数、对象和数组
 ==
 
+> 这一章节里的知识点会比较的多和杂，走马观花的过一遍，在其后的章节中会更加详细的介绍。
+
 ##函数的定义
 coffeeScript中屏弃了`function`这个关键字的用法，取而代之的使用 `->` 来表明一个函数。
 
@@ -28,8 +30,7 @@ coffeeScript中屏弃了`function`这个关键字的用法，取而代之的使�
      data = {age:22, addr:"BeiJing"}
      $.post data, (strret)->
           console.log strret
-          
-函数还支持变参的处理，#todo#查阅资料
+
 
 ##数组的定义#
 coffeescript的数组的定义和原生的javascript基本是类似的，如
@@ -47,7 +48,6 @@ coffeescript的数组的定义和原生的javascript基本是类似的，如
 数组的定有还有一个讨厌的兼容性问题，比如这个 `var shopping = [1, 2, 3, 4, ]`  ,这里后面多一个逗号，这个Javascript代码在IE下就不能很好的工作。
 但是在coffeescript中，如这个`shopping = [1,2,3,4,]` ,是没有问题,coffeescript会帮你做好兼容处理。
 
-@todos 数组的使用
 
 ##对象字面量的定义
 
@@ -58,7 +58,4 @@ coffeescript的数组的定义和原生的javascript基本是类似的，如
 以上两种写法都是没有问题的，而且不用担心key的名字和javascript的关键字有冲突，如有以下原生的javascript代码，
 `var studentA = {"class":"一班级", name:"张三" }; `,注意，为了不和关键字冲突，这里需要用引号做处理，而coffeescript是不用担心这个问题的。
 把对象的值赋给变量的时候有一个很酷的功能， `{age, addr} = obj`
-将会把obj.age和obj.addr的值分别赋值
-
-
-@toods对于数字常量有什么不一样的地方呢
+将会把obj.age和obj.addr的值分别赋值。
