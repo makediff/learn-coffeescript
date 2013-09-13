@@ -9,3 +9,5 @@ learn-coffeescript
 随着nodejs的兴起，Javascript语言现在有了更好的发展前进，我们将会用到更多，所以我觉定从CoffeeScript开始写起。
 
 写东西算是一件不容易的事情，感谢老婆的支持。
+
+我的博客地址: http://imakediff.com
