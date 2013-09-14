@@ -6,14 +6,14 @@
 而且更优雅。
 
 ##麻雀虽小五脏俱全
-先来看一个原生的例子，假设我要写一个这样的函数`var isGreetThenTen = function (x){ return x>10; }`，
+先来看一个原生的例子，假设我要写一个这样的函数`var isGreatThenTen = function (x){ return x>10; }`，
 这个函数用来判断一个数是否大于10，那我们用coffeescript要怎么写呢？如下：
 
-    isGreetThenTen = (x) -> x>10
+    isGreatThenTen = (x) -> x>10
 
 看明白了吗？是不是很简洁？那我们来分解一下，四大要素都在哪儿。
 
-1. `isGreetThenTen`是函数的名字
+1. `isGreatThenTen`是函数的名字
 2. `(x)` 用来指定参数
 3. `->` 相当于原来的`function`关键字
 4. `x>10`在这里既是函数体同时也是返回值， coffeescript会默认的把函数体里的 **最后执行的** 一条语句的值最为函数的返回值， **注意** ：这里并不一定是最后一条语句，大家试着去理解一下。
@@ -23,8 +23,8 @@
 完整的代码如下：
 
     isGreetThenTen = (x) -> x>10
-    console.log isGreetThenTen(20)
-    console.log isGreetThenTen(9)
+    console.log isGreatThenTen(20)
+    console.log isGreatThenTen(9)
 如果没有出意外的话你的结果也因该是
 
     true
@@ -39,7 +39,7 @@ coffeescript中`(x) -> x` 代表了函数的参数、函数体和函数返回值
 > Tips: 实践出真知，要多动手，记住这里的一条就够了： 多用 coffee -c 编译coffescript脚本和你预期的对比来学习。
 
 ##函数的调用
-对于上面定义的`isGreetThenTen`函数，我们可以通过有括号的和没有括号两种方式来调用， `isGreetThenTen(10)`或`isGreetThenTen 10`。
-如果一行上同时有多个函数的调用，为了避免优先级的混淆，建议加上括号。建议采用`console.log isGreetThenTen(10) `而不是`console.log isGreetThenTen 10`。
+对于上面定义的`isGreetThenTen`函数，我们可以通过有括号的和没有括号两种方式来调用， `isGreatThenTen(10)`或`isGreatThenTen 10`。
+如果一行上同时有多个函数的调用，为了避免优先级的混淆，建议加上括号。建议采用`console.log isGreqtThenTen(10) `而不是`console.log isGreetThenTen 10`。
 
 ##函数体
