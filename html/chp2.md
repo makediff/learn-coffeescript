@@ -5,7 +5,7 @@
 
 CoffeeScript主要用于两种环境中，一、浏览器里。 二、服务器端。下面介绍这两种环境的配置。
 
-###在浏览器里运行
+## 在浏览器里运行
 主要分为两步
 
 1. 包含coffee-script.js，官网下载地址：<http://coffeescript.org/extras/coffee-script.js> 。
@@ -24,7 +24,7 @@ CoffeeScript主要用于两种环境中，一、浏览器里。 二、服务器�
 
 > 虽然在浏览器里能直接的运行，但是不建议这样做，主要是考虑到性能的原因。 推荐使用 `coffee`的`-c`参数将coffesscript代码转换到原生的javascript代码，再引入到页面里。
 
-###在服务器上运行
+## 在服务器上运行
 我们需要安装coffee-script脚本，有个比较方便的工具可以使用，npm。打开你熟悉的终端，输入以下命令
 `npm -g install coffee-script`
 就可以把coffee-script以全局的方式安装到机器，如果只需要安装到当前目录下，可以去掉参数 `-g` 。
