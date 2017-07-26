@@ -22,14 +22,18 @@
 
 完整的代码如下：
 
-    isGreetThenTen = (x) -> x>10
-    console.log isGreatThenTen(20)
-    console.log isGreatThenTen(9)
+```
+isGreetThenTen = (x) -> x>10
+console.log isGreatThenTen(20)
+console.log isGreatThenTen(9)
+```
+
 如果没有出意外的话你的结果也因该是
 
-    true
-    false
-
+```
+true
+false
+```
 ##极致的精简
 那如何定义一个空的函数呢？ `var emptyFunc = function(){};`
 其实很简单，`emptyFunc = -> `，是不是简单到让人看不懂？

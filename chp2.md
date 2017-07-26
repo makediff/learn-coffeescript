@@ -15,12 +15,13 @@ CoffeeScript主要用于两种环境中，一、浏览器里。 二、服务器�
 
 如下：
 
-
-	<script src="../coffee-script.js" ></script>
-	<script type="text/coffeescript">
-	# 你的CoffeeScript代码
-	alert "世界你好!"
-	</script>
+```
+<script src="../coffee-script.js" ></script>
+<script type="text/coffeescript">
+# 你的CoffeeScript代码
+alert "世界你好!"
+</script>
+```
 
 > 虽然在浏览器里能直接的运行，但是不建议这样做，主要是考虑到性能的原因。 推荐使用 `coffee`的`-c`参数将coffesscript代码转换到原生的javascript代码，再引入到页面里。
 
@@ -30,14 +31,15 @@ CoffeeScript主要用于两种环境中，一、浏览器里。 二、服务器�
 就可以把coffee-script以全局的方式安装到机器，如果只需要安装到当前目录下，可以去掉参数 `-g` 。
 安装完成后，测试一下是否安装成功。
 
-	chendeMacBook-Pro:chp1 cheneifei$ npm -gl list|grep -i coffee
-		├── coffee-script@1.6.3
-		│   git://github.com/jashkenas/coffee-script.git
-		│   http://coffeescript.org
-		chendeMacBook-Pro:chp1 cheneifei$
+```
+chendeMacBook-Pro:chp1 cheneifei$ npm -gl list|grep -i coffee
+	├── coffee-script@1.6.3
+	│   git://github.com/jashkenas/coffee-script.git
+	│   http://coffeescript.org
+	chendeMacBook-Pro:chp1 cheneifei$
+```
 
 表示成了。 接下来就可以使用她提供的命令 coffee来运行文件了，对了CoffeeScript文件一般以coffee为扩展名。
 运行一下吧， `coffee chp1_code2.coffee`
 
 好了，环境就到此为止了，如果你还不知道npm, 去这里看看 <https://npmjs.org>
-
